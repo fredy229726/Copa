@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copa de las Casas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: large;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://static.vecteezy.com/system/resources/thumbnails/004/847/742/small_2x/a-lakeside-walkway-with-beautiful-mountain-scenery-in-the-background-in-anime-style-vector.jpg'); /* Fondo de pantalla */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-color: rgba(240, 240, 240, 0.8); /* Fondo con opacidad */
+            scroll-behavior: smooth; /* Desplazamiento suave */
+        }
+
+        header {
+            background-color: rgba(14, 129, 233, 0.616); /* Encabezado con opacidad */
+            color: #fff;
+            padding: 2%;
+            text-align: center;
+            transition: background-color 0.3s ease; /* Transición de color */
+        }
+        
+        header:hover {
+            background-color: rgba(16, 18, 163, 0.5); /* Cambio de color al pasar el cursor */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 2%;
+            transition: transform 0.3s ease; /* Transición de transformación */
+        }
+        
+        nav ul li:hover {
+            transform: scale(1.1); /* Efecto de escala al pasar el cursor */
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease; /* Transición de color */
+        }
+        
+        nav ul li a:hover {
+            color: #ffd700; /* Cambio de color al pasar el cursor */
+        }
+
+        .container{
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        aside{
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+            border-radius: 5px; /* Bordes redondeados */
+            padding: 10px; /* Relleno interno */
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+            margin-top: 20px; /* Margen superior */
+            width: 30%;
+            height: 100%;
+        }
+        
+        main {
+            padding: 2%;
+            width: 100%;
+            height: 100%;
+        }
+
+        #video-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+        section {
+            margin-bottom: 3%;
+            background-color: rgba(255, 255, 255, 0.8); /* Sección con opacidad */
+            border-radius: 10px;
+            padding: 2%;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease; /* Transición de transformación */
+        }
+        
+        section:hover {
+            transform: translateY(-5px); /* Efecto de elevación al pasar el cursor */
+        }
+
+        section h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 1%;
+            margin-bottom: 2%;
+        }
+        
+        section p {
+            color: black;
+        }
+        
+        footer {
+            background-color: rgba(14, 129, 223, 0.616); /* Pie de página con opacidad */
+            color: #fff;
+            text-align: center;
+            padding: 1%;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        /* Estilos para los iconos de contacto */
+        .contact-info i {
+            margin-right: 10px;
+        }
+
+        .logo-equipo {
+            flex: 1;
+            text-align: center;
+        }
+
+        .logo-equipo img {
+            width: auto;/* Ajusta el tamaño máximo de los logos según sea necesario */
+            height: 200px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Colapsar los bordes de las celdas */
+        }
+
+        th, td {
+            border: 1px solid black; /* Borde de 1px sólido negro */
+            padding: 8px; /* Espaciado interno de las celdas */
+            text-align: center; /* Alineación centrada del texto */
+        }
+
+        th {
+            background-color: #f2f2f2; /* Fondo gris claro para los encabezados */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>¡Bienvenido a la academia!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Estudiantes</a></li>
+                <li><a href="index6.html">Copa de las Casas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <audio id="intro-sound" controls autoplay>
+        <source src="harry_potter.ogg" type="audio/ogg">
+        <source src="harry_potter.mp3" type="audio/mp3">
+    </audio>
+    <div class="container">
+        <main>
+            <!-- Contenido principal de la página -->
+            <section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Copa de las Casas</th>
+                        </tr>
+                        <tr>
+                            <th>Casa</th>
+                            <th>Puntos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="logo-equipo">
+                            <th><img src="https://blogger.googleusercontent.com/img/a/AVvXsEgR2HBIsNbGkTw5bjn3eCKBpbDAmNjV13s_fZcI4Gsi6oo_51_OzvwU8r9uXxKNIAd5kJA2Thu6mcIqtvuCB9nwoBCo5zkYf_06qvj3KY9A56eHhDKaaj5K13uXXVk9teIwsbIiYtACbAUzkcv-kYveQVqtu7mGCvDJkDnTL_s9X8E4U43gCRbM6oFHTXI8" alt=""><br>Horned Serpent</th>
+                            <th>0</th>
+                        </tr>
+                        <tr class="logo-equipo">
+                            <th><img src="https://blogger.googleusercontent.com/img/a/AVvXsEhamS-RxNgYClrbYiJb0qTr19XYBuVRCmiXVKHUedxlF0WeLPd5QMiZmqgi5MmIDeU8IjeHvkVSJE3e_QS32Naz8GrLoGTF2S9eF9t_11JJZdxbYuMYBU4WDSGcTA1GunCAHJstF76VBg4sIQn0MSNt2g3VHy_VJObwIEw10wTPWGQi9w9xDq5JCXAq1qzl" alt="casa"><br>Slytherin</th>
+                            <th>0</th>
+                        </tr>
+                        <tr class="logo-equipo">
+                            <th><img src="https://blogger.googleusercontent.com/img/a/AVvXsEgXV88bhqenbVT48fZvmDSW1Sc62egLbm4zt06AWAGWJfARMedxZnrSbIn1fJonHRdZ_RZPolLGRMsJwLArEZJLU4YkVBU0LoR8ZqaW2UtVYLpZGManfFA7IW7MMEhcB-vbcCDSGS0BBQkpOw5yzMIDEjtrkA_u2gPUAOB2zmjIN_VWf77n0hkCtd-X2Ijy" alt="casa"><br>ThunderBird</th>
+                            <th>0</th>
+                        </tr>
+                        <tr class="logo-equipo">
+                            <th><img src="https://blogger.googleusercontent.com/img/a/AVvXsEg9TxzyJfT_TuHBzYA-r8kxWDNr4TdkVDkikrbD5buUtABi0eJY0LBHulE1g9YwNIa6x26eqa3BGjb0PviIwwm_4qyzCGtGITvSofkZb78xlD5Kx8mIDyViuxpmnbBD0xwpNxyMD5K4yh26uVzQvDKsEY08NeIWTKn2FT6r4IBfbH8tdoIrLsPmp1WYUKiv" alt="casa"><br>Hufflepuff</th>
+                            <th>0</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div> <!-- Cierre del div .container -->
+    <footer>
+        <p>Únete al grupo en: <a href="https://www.facebook.com/groups/1765381460409727/?ref=share&mibextid=NSMWBT"><i class="fab fa-facebook"></i></a></p>
+    </footer>
+</body>
+
+</html>
